@@ -22,7 +22,7 @@ public class FirstCoding : MonoBehaviour
     // 논리형 변수 선언하기
     private bool isMan;
 
-    // Start is called before the first frame update
+    // Start 함수는 플레이 되면 처음 한 번만 실행되는 함수입니다.
     void Start()
     {
         // 변수의 사용법
