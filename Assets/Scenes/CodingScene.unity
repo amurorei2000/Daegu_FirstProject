@@ -283,7 +283,7 @@ MonoBehaviour:
   isMan: 1
   runState: 1
   walkState: 0
-  endCount: 100
+  endCount: 10
   printMax: 5
 --- !u!1 &2121150626
 GameObject:
