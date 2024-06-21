@@ -6,7 +6,16 @@ public class SwordMan : MonoBehaviour
 {
     public int hp = 100;
     public float attackPower = 5.5f;
-    string name = "검객";
+    public string myName = "검객";
+
+    // 생성자 함수(Constructor)
+    public SwordMan(int health, float atk, string nickName)
+    {
+        hp = health;
+        attackPower = atk;
+        myName = nickName;
+    }
+
 
 
     void Start()
@@ -22,7 +31,7 @@ public class SwordMan : MonoBehaviour
 
     public void Move()
     {
-        print("이동한다!");
+        print(myName + "(이)가 이동합니다!");
     }
 
     public float Attack(string targetName)
