@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class SwordMan : MonoBehaviour
 {
-    public int hp = 100;
+    public int healthPoint { get; set; }
+
+    protected int hp = 100;
     public float attackPower = 5.5f;
     public string myName = "검객";
 
     // 생성자 함수(Constructor)
-    public SwordMan(int health, float atk, string nickName)
-    {
-        hp = health;
-        attackPower = atk;
-        myName = nickName;
-    }
+    //public SwordMan(int health, float atk, string nickName)
+    //{
+    //    hp = health;
+    //    attackPower = atk;
+    //    myName = nickName;
+    //}
 
 
 
@@ -29,7 +31,7 @@ public class SwordMan : MonoBehaviour
         
     }
 
-    public void Move()
+    public virtual void Move()
     {
         print(myName + "(이)가 이동합니다!");
     }
@@ -43,5 +45,15 @@ public class SwordMan : MonoBehaviour
     void Die()
     {
         print("사망했습니다.");
+    }
+
+    public int GetHP()
+    {
+        return hp;
+    }
+
+    public void SetHP(int health)
+    {
+        hp = health;
     }
 }
